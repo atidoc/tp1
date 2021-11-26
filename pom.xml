@@ -4,7 +4,7 @@
   <groupId>com.objis.demomaven</groupId>
   <artifactId>monappli</artifactId>
   <packaging>pom</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>monappli</name>
   <url>https://github.com/atidoc/tp1</url>
   <scm>
