@@ -3,22 +3,22 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				sh "mvn -f ./target/checkout/ compile"
+				sh "mvn compile"
 			}
 		}
 		stage('Test') {
 			steps {
-				sh "mvn -f ./target/checkout/ test"
+				sh "mvn test"
 			}
 		}
 		stage('Package') {
 			steps {
-				sh "mvn -f ./target/checkout/ package"
+				sh "mvn package"
 			}
 		}
 		stage('Deploy') {
 			steps {
-				sh "mv target/checkout/monappli-web/target/monappli-web.war C:/Program\\ Files/Apache\\ Software\\ Foundation/Tomcat\\ 9.0/webapps/monappli-web.war"
+				sh "mv monappli-web/target/monappli-web.war C:/Program\\ Files/Apache\\ Software\\ Foundation/Tomcat\\ 9.0/webapps/monappli-web.war"
 			}
 		}
 	}
