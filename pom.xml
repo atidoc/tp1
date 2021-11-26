@@ -10,7 +10,7 @@
   <scm>
     <connection>scm:git:github.com:atidoc/tp1.git</connection>
     <developerConnection>scm:git:github.com:atidoc/tp1.git</developerConnection>
-    <tag>monappli-1.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <dependencies>
     <dependency>
