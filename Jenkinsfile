@@ -1,18 +1,17 @@
-// Declarative //
 pipeline {
 	agent any
 	stages {
 		stage('Build') {
-			sh "mvn -f ./target/checkout/ compile"
+			echo "mvn -f ./target/checkout/ compile"
 		}
 		stage('Test') {
-			sh "mvn -f ./target/checkout/ test"
+			echo "mvn -f ./target/checkout/ test"
 		}
 		stage('Package') {
-			sh "mvn -f ./target/checkout/ package"
+			echo "mvn -f ./target/checkout/ package"
 		}
 		stage('Deploy') {
-			sh "mv target/checkout/monappli-web/target/monappli-web.war C:/Program\\ Files/Apache\\ Software\\ Foundation/Tomcat\\ 9.0/webapps/monappli-web.war"
+			echo "mv target/checkout/monappli-web/target/monappli-web.war C:/Program\\ Files/Apache\\ Software\\ Foundation/Tomcat\\ 9.0/webapps/monappli-web.war"
 		}
 	}
 }
